@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leaflet Demo</title>
+        <link rel="stylesheet" href="./leaflet/leaflet.css">
+        <script src="./leaflet/leaflet-src.js"></script>
+        <style>
+                #map{
+                        width: 100%;
+                        height: calc(100vh);
+                }
+        </style>
+</head>
+<body onload="initMap()">
+        <div id="map"></div>
+        <script>
+                function initMap(){
+                        //实例化一个地图对象，将实例对象挂载到map这个容器上
+                        var map = L.map('map',{
+                                center:[51.505,-0.09],
+                                zoom:3
+                        })
+                }
+        </script>
+</body>
+</html>
